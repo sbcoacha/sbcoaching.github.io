@@ -1,0 +1,6 @@
+# robots.txt för https://www.sb-coaching.se
+User-agent: *
+Disallow:
+
+# Peka sökmotorer till XML-sitemap (valfritt om du skapar en senare)
+Sitemap: https://www.sb-coaching.se/sitemap.xml
