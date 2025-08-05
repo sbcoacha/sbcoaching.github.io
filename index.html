@@ -4,61 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SB Coaching | Individuell fotbollsträning i Göteborg för barn 10–16 år</title>
-  <meta name="google-site-verification" content="hVdi2I6hXP2Dvmmq0DBDlb3NkuUGfSfQG4aKO0uD5-U" />
-  <meta name="description" content="Individuell fotbollsträning i Göteborg. 1 pass = 1 färdighet, 2 tränare, barn 10–16 år. Boka enstaka pass eller 10-veckorsprogram med bonuspass!" />
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="hVdi2I6hXP2Dvmmq0DBDlb3NkuUGfSfQG4aKO0uD5-U"/>
+
+  <meta name="description" content="Individuell fotbollsträning i Göteborg. 1 pass = 1 färdighet, 2 tränare, barn 10–16 år." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="icon" href="sb-logo.png" />
+
   <style>
     html{scroll-behavior:smooth}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Open Sans',sans-serif;color:#222;background:#fff}
-    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;margin-bottom:.5rem}
-    a{color:inherit;text-decoration:none}
+    *,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Open Sans',sans-serif;color:#222}
+    h1,h2,h3{font-family:'Montserrat',sans-serif;margin-bottom:.6rem}
+    a{text-decoration:none;color:inherit}
     section{padding:4rem 1rem;max-width:1200px;margin:0 auto;scroll-margin-top:80px}
-    nav{position:fixed;top:0;width:100%;background:#ffffffee;backdrop-filter:blur(8px);z-index:1000;box-shadow:0 2px 4px rgba(0,0,0,.05)}
+
+    /* NAV */
+    nav{position:fixed;top:0;width:100%;background:#ffffffee;backdrop-filter:blur(8px);box-shadow:0 2px 4px rgba(0,0,0,.05);z-index:1000}
     nav .container{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;max-width:1200px;margin:0 auto}
     nav ul{list-style:none;display:flex;gap:1rem}
-    nav li{font-weight:600;text-transform:uppercase;font-size:.9rem}
-    .logo-wrapper{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.1rem}
-    .logo-wrapper img{height:38px;width:38px}
+    nav li{font-weight:600;font-size:.9rem;text-transform:uppercase}
+    .logo{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.1rem}
+    .logo img{width:38px;height:38px}
+
     .btn{display:inline-block;padding:.75rem 1.5rem;border-radius:4px;background:#0A74DA;color:#fff;font-weight:600;transition:background .2s}
     .btn:hover{background:#095eba}
+
+    /* HERO */
     header{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 1rem;background:linear-gradient(135deg,#0A74DA 0%,#004f9d 100%);color:#fff}
-    header h1{font-size:2.5rem;margin-bottom:.75rem}
-    header h2{font-size:1.3rem;font-weight:300;margin-bottom:1.75rem;max-width:600px;margin-left:auto;margin-right:auto}
-    .features-list{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:1rem}
-    .feature{padding:1.5rem;border:1px solid #eee;border-radius:8px;text-align:center}
-    .schedule-table{width:100%;border-collapse:collapse;margin-top:1rem}
-    .schedule-table th,.schedule-table td{padding:.75rem 1rem;border:1px solid #ddd;text-align:left;font-size:.95rem}
-    iframe{width:100%;border:none;min-height:600px}
-    .testimonials{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:1rem}
-    .testimonial{border:1px solid #eee;border-radius:8px;padding:1.25rem}
+    header h1{font-size:2.5rem;margin-bottom:.8rem}
+    header h2{font-size:1.3rem;font-weight:300;margin-bottom:1.8rem;max-width:600px;margin-inline:auto}
+
+    /* BLOCKS */
+    .features{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:1rem}
+    .feature{border:1px solid #eee;border-radius:8px;padding:1.4rem;text-align:center}
+    .schedule{width:100%;border-collapse:collapse;margin-top:1rem}
+    .schedule th,.schedule td{border:1px solid #ddd;padding:.75rem 1rem;text-align:left;font-size:.95rem}
+
+    iframe{width:100%;border:none;min-height:1200px}
+    .testimonials{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:1rem}
+    .testimonial{border:1px solid #eee;border-radius:8px;padding:1.2rem}
+
     footer{background:#f7f7f7;padding:2rem 1rem;text-align:center;font-size:.9rem;margin-top:2rem}
-    @media(max-width:700px){header h1{font-size:2rem}header h2{font-size:1.05rem}}
+
+    @media(max-width:700px){
+      header h1{font-size:2rem}
+      header h2{font-size:1.05rem}
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav>
-    <div class='container'>
-      <a href='#' class='logo-wrapper'><img src='sb-logo.png' alt='SB Coaching logotyp'/> SB Coaching</a>
+    <div class="container">
+      <a href="#" class="logo"><img src="sb-logo.png" alt="SB Coaching logotyp"/>SB Coaching</a>
       <ul>
-        <li><a href='#om'>Om oss</a></li>
-        <li><a href='#pass'>Pass</a></li>
-        <li><a href='#priser'>Priser</a></li>
-        <li><a href='#anmalan'>Anmälan</a></li>
-        <li><a href='#kontakt'>Kontakt</a></li>
+        <li><a href="#om">Om oss</a></li>
+        <li><a href="#pass">Pass</a></li>
+        <li><a href="#priser">Priser</a></li>
+        <li><a href="#anmalan">Anmälan</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
   </nav>
-  <header><div class='content'><h1>SB Specialpass – 1 pass · 1 färdighet · 2 tränare</h1><h2>Individuell fotbollsträning för spelare 10–16 år i Göteborg</h2><a href='#anmalan' class='btn'>Boka ditt pass</a></div></header>
-  <section id='om'><h2>Vår filosofi</h2><p>Vi är bröderna Senad &amp; Blertim Zuta ...</p></section>
-  <section id='pass'><h2>Vad gör våra pass unika?</h2><div class='features-list'><div class='feature'>1 timme ren färdighetsträning</div><div class='feature'>Max 8 spelare per pass</div><div class='feature'>Två UEFA-licensierade tränare</div><div class='feature'>Individuell feedback efter varje övning</div><div class='feature'>Välj ett pass eller hela serien</div><div class='feature'>Boka alla 10 pass → få 1 h extra valfri färdighet</div></div></section>
-  <section id='schema'><h2>Schema – Hösttermin 2025</h2><table class='schedule-table'><thead><tr><th>Datum</th><th>Färdighet</th><th>Tid</th><th>Plats</th><th>Tränare</th></tr></thead><tbody><tr><td>30 aug</td><td>Volley</td><td>10:00–11:00</td><td>Förbovallen</td><td>Senad &amp; Blertim</td></tr></tbody></table></section>
-  <section id='priser'><h2>Priser</h2><p style='text-align:center;font-size:1.2em;margin:2em 0;'>Kontakta oss för aktuella priser och paket!</p></section>
-  <section id='anmalan'><h2>Boka din plats</h2><iframe src='<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY_qeUboUHV2ClctIs5MkWqklAwsOvhIHdhWsCGKPGg7NZLw/viewform?embedded=true" width="640" height="1498" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>></section>
-  <section id='kontakt'><h2>Kontakt</h2><p>📍 Förbovallen, Mölndal</p><p>✉️ <a href='mailto:sb.coacha@gmail.com'>sb.coacha@gmail.com</a></p><p>📱 <a href='https://www.instagram.com/sb___coaching' target='_blank' rel='noopener'>@sb___coaching</a></p></section>
-  <footer>© 2025 SB Coaching | UEFA B-licensierade tränare</footer>
+
+  <!-- Hero -->
+  <header id="top">
+    <div class="content">
+      <h1>SB Specialpass – 1 pass · 1 färdighet · 2 tränare</h1>
+      <h2>Individuell fotbollsträning för spelare 10–16 år i Göteborg</h2>
+      <a href="#anmalan" class="btn">Boka ditt pass</a>
+    </div>
+  </header>
+
+  <!-- Om oss -->
+  <section id="om">
+    <h2>Vår filosofi</h2>
+    <p>Vi är bröderna Senad &amp; Blertim Zuta som grundade SB Coaching för att ge barn och ungdomar den individuella fotbollsträning vi själva saknade. Varje lördag fokuserar vi på <strong>EN</strong> specifik färdighet – allt från volley till första touch – så att spelarna kan omsätta lärdomarna direkt i sin lagträning.</p>
+  </section>
+
+  <!-- Pass -->
+  <section id="pass">
+    <h2>Vad gör våra pass unika?</h2>
+    <div class="features">
+      <div class="feature">1 timme ren färdighetsträning</div>
+      <div class="feature">Max 8 spelare per pass</div>
+      <div class="feature">Två UEFA-licensierade tränare</div>
+      <div class="feature">Individuell feedback efter varje övning</div>
+      <div class="feature">Välj ett pass eller hela serien</div>
+      <div class="feature">Boka alla 10 pass → få 1 h extra färdighet</div>
+    </div>
+  </section>
+
+  <!-- Schema -->
+  <section id="schema">
+    <h2>Schema – Hösttermin 2025</h2>
+    <table class="schedule">
+      <thead><tr><th>Datum</th><th>Färdighet</th><th>Tid</th><th>Plats</th><th>Tränare</th></tr></thead>
+      <tbody>
+        <tr><td>30 aug</td><td>Volley</td><td>10 : 00–11 : 00</td><td>Förbovallen</td><td>Senad &amp; Blertim</td></tr>
+        <tr><td>6 sep</td><td>Första touch</td><td>10 : 00–11 : 00</td><td>Förbovallen</td><td>Senad &amp; Blertim</td></tr>
+        <tr><td>1 nov</td><td>Avslut från inlägg</td><td>10 : 00–11 : 00</td><td>Förbovallen</td><td>Senad &amp; Blertim</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Priser -->
+  <section id="priser">
+    <h2>Priser</h2>
+    <p style="text-align:center;font-size:1.2em;margin:2em 0;">Kontakta oss för aktuella priser och paket!<br>Vi skräddarsyr upplägg efter behov.</p>
+  </section>
+
+  <!-- Anmälan -->
+  <section id="anmalan">
+    <h2>Boka din plats</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY_qeUboUHV2ClctIs5MkWqklAwsOvhIHdhWsCGKPGg7NZLw/viewform?embedded=true"
+            width="640" height="1498" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>Vad säger föräldrar &amp; spelare?</h2>
+    <div class="testimonials">
+      <div class="testimonial">“Vår dotter förbättrade sin första touch enormt på bara tre pass!” – Anna, mamma till Elin (13)</div>
+      <div class="testimonial">“Proffsigt upplägg och fantastiska tränare!” – Johan, pappa till Leo (11)</div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>📍 Förbovallen, Mölndal</p>
+    <p>✉️ <a href="mailto:sb.coacha@gmail.com">sb.coacha@gmail.com</a></p>
+    <p>📱 <a href="https://www.instagram.com/sb___coaching" target="_blank" rel="noopener">@sb___coaching</a></p>
+  </section>
+
+  <footer>© 2025 SB Coaching – UEFA B-licensierade tränare</footer>
 </body>
 </html>
