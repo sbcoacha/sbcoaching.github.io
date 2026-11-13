@@ -1,91 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SB Coaching | Individuell fotbollsträning i Göteborg för barn 10–16 år</title>
-  <meta name="google-site-verification" content="hVdi2I6hXP2Dvmmq0DBDlb3NkuUGfSfQG4aKO0uD5-U" />
-  <meta name="description" content="Individuell fotbollsträning i Göteborg. 1 pass = 1 färdighet, 2 tränare, barn 10–16 år." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="sb-logo.png" />
-  <style>
-    :root{
-      --sb-blue:#00356b;
-      --sb-gold:#b89265;
-      --sb-light:#f7f7f7;
-    }
-    html{scroll-behavior:smooth}
-    *,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Open Sans',sans-serif;color:#222;background:#fff}
-    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;margin-bottom:.6rem}
-    a{text-decoration:none;color:inherit}
-    section{padding:4rem 1rem;max-width:1200px;margin:0 auto;scroll-margin-top:90px}
-    /* NAV */
-    nav{position:fixed;top:0;width:100%;background:var(--sb-blue);color:#fff;box-shadow:0 2px 4px rgba(0,0,0,.15);z-index:1000}
-    nav .container{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;max-width:1200px;margin:0 auto}
-    nav ul{list-style:none;display:flex;gap:1rem;transition:max-height .3s ease}
-    nav li{font-weight:600;font-size:.9rem;text-transform:uppercase}
-    nav a{color:#fff}
-    nav a:hover{color:var(--sb-gold)}
-    .logo{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.1rem;color:#fff}
-    .logo img{width:42px;height:42px}
-    .hamburger{display:none;background:none;border:none;font-size:1.9rem;line-height:1;cursor:pointer;color:#fff}
-    .btn{display:inline-block;padding:.75rem 1.5rem;border-radius:4px;background:var(--sb-gold);color:#fff;font-weight:600;transition:opacity .2s}
-    .btn:hover{opacity:.9}
-    /* HERO */
-    header{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 1rem;background:url('coaches.jpg') center/cover no-repeat;position:relative;color:#fff}
-    header:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}
-    header .content{position:relative;z-index:1;max-width:800px}
-    header h1{font-size:2.8rem;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.5px}
-    header h2{font-size:1.25rem;font-weight:300;margin-bottom:2rem}
-    /* CONTENT */
-    .features{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:1rem}
-    .feature{border:2px solid var(--sb-blue);border-radius:8px;padding:1.4rem;text-align:center}
-    iframe{width:100%;border:none;min-height:1200px}
-    .testimonials{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:1rem}
-    .testimonial{border:1px solid #eee;border-radius:8px;padding:1.2rem;background:var(--sb-light)}
-    footer{background:var(--sb-blue);padding:2rem 1rem;text-align:center;font-size:.9rem;color:#fff;margin-top:2rem}
-    /* MOBILE */
-    @media(max-width:640px){
-      section{padding:2rem 1rem}
-      header{min-height:80vh;padding-top:5rem}
-      nav ul{flex-direction:column;max-height:0;overflow:hidden}
-      nav ul.open{max-height:400px;padding-top:1rem}
-      .hamburger{display:block}
-      header h1{font-size:2rem}
-      header h2{font-size:1.1rem}
-      iframe{min-height:1000px}
-    }
-  </style>
-  <script>
-    function toggleMenu(){document.querySelector('nav ul').classList.toggle('open');}
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081321">
+<title>SB Coaching | Individuell fotbollsträning i Göteborg</title>
+<meta name="description" content="Individuell fotbollsträning för spelare 10–16 år i Mölndal och Göteborg. Två UEFA B-licensierade tränare, små grupper och personlig feedback.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="container">
-      <a href="index.html" class="logo"><img src="sb-logo.png" alt="SB Coaching"/>SB Coaching</a>
-      <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">☰</button>
-      <ul>
-        <li><a href="om.html">Om oss</a></li><li><a href="pass.html">Pass</a></li><li><a href="priser.html">Priser</a></li><li><a href="anmalan.html">Anmälan</a></li><li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </div>
+<header class="site-header">
+  <a class="brand" href="#hem" aria-label="SB Coaching startsida"><img src="37569.webp" alt="SB Coaching logotyp"><span>SB <b>COACHING</b></span></a>
+  <button class="menu-toggle" aria-label="Öppna meny" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#upplagg">Vårt upplägg</a><a href="#metod">Träningsmetod</a><a href="#tranare">Om oss</a><a href="#paket">Träningspaket</a><a class="nav-cta" href="#anmalan">Intresseanmälan</a>
   </nav>
-  <header id="top">
-    <div class="content">
-      <h1>Välkommen till SB Coaching</h1>
-      <h2>Individuell fotbollsträning i Göteborg för spelare 10–16 år</h2>
-      <a href="anmalan.html" class="btn">Boka ditt pass</a>
-    </div>
-  </header>
-  <section id="om"><h2>Vår filosofi</h2><p>Vi är bröderna Senad &amp; Blertim Zuta – UEFA B‑licensierade tränare som brinner för att utveckla unga spelares individuella färdigheter.</p></section>
-  <section id="pass"><h2>Vad gör våra pass unika?</h2><div class="features"><div class="feature">1 timme • 1 färdighet</div><div class="feature">Max 8 spelare per pass</div><div class="feature">Två UEFA‑licensierade tränare</div><div class="feature">Individuell feedback</div></div></section>
-  <section id="priser"><h2>Priser</h2><p style="text-align:center;font-size:1.2em;margin:2em 0;">Kontakta oss för aktuella priser och paket!</p></section>
-  <section id="anmalan"><h2>Boka din plats</h2><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdY_qeUboUHV2ClctIs5MkWqklAwsOvhIHdhWsCGKPGg7NZLw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe></section>
-  <section id="testimonials"><h2>Vad säger föräldrar &amp; spelare?</h2><div class="testimonials"><div class="testimonial">“Vår dotter förbättrade sin första touch enormt på bara tre pass!” – Anna</div></div></section>
-  <section id="kontakt"><h2>Kontakt</h2><p>📍 Förbovallen, Mölndal</p><p>✉️ <a href="mailto:sb.coacha@gmail.com">sb.coacha@gmail.com</a></p><p>📱 <a href="https://www.instagram.com/sb___coaching" target="_blank" rel="noopener">@sb___coaching</a></p></section>
-  <footer>© 2025 SB Coaching – UEFA B‑licensierade tränare</footer>
-</body>
-</html>
+</header>
+<main>
+<section class="hero" id="hem">
+  <div class="hero-bg"></div><div class="hero-content wrap">
+    <p class="eyebrow"><span></span> INDIVIDUELL FOTBOLLSUTVECKLING</p>
+    <h1>UTVECKLA DITT<br><em>FOTBOLLSSPEL.</em></h1>
+    <p class="hero-lead">Träning med fokus på detaljerna som gör skillnad. För spelare 10–16 år som vill ta nästa steg.</p>
+    <div class="hero-actions"><a class="btn btn-gold" href="#anmalan">Gör en intresseanmälan <b>↗</b></a><a class="text-link" href="#metod">Upptäck vårt upplägg <span>↓</span></a></div>
+    <div class="hero-proof"><div><strong>2</strong><span>UEFA B-tränare</span></div><i></i><div><strong>10–16</strong><span>År</span></div><i></i><div><strong>8</strong><span>Spelare max / pass</span></div></div>
+  </div>
+  <div class="hero-tag">SB COACHING <span>•</span> MÖLNDAL / GÖTEBORG</div>
+</section>
+
+<section class="intro section wrap" id="upplagg">
+  <div class="section-kicker">01 / VÅRT UPPLÄGG</div>
+  <div class="intro-grid"><div><h2>SMÅ GRUPPER.<br><em>STORA DETALJER.</em></h2></div>
+  <div class="intro-copy"><p class="large">Vi hjälper unga fotbollsspelare att utveckla sina individuella färdigheter genom fokuserad träning, tydliga instruktioner och personlig feedback.</p><p>Varje pass har ett tydligt tema. Vi tränar med kvalitet och ser till att varje spelare får uppmärksamhet och konkreta saker att arbeta vidare med.</p></div></div>
+  <div class="feature-row">
+    <article><span class="feature-no">01</span><h3>1 timme.<br>1 tydligt fokus.</h3><p>Varje pass har ett genomtänkt tema och en röd tråd.</p></article>
+    <article><span class="feature-no">02</span><h3>Max 8 spelare</h3><p>Små grupper ger fler repetitioner och mer individuell feedback.</p></article>
+    <article><span class="feature-no">03</span><h3>Två tränare</h3><p>Senad och Blertim är med under hela träningspasset.</p></article>
+    <article><span class="feature-no">04</span><h3>Utveckling i fokus</h3><p>Vi ser spelaren, detaljerna och nästa steg i utvecklingen.</p></article>
+  </div>
+</section>
+
+<section class="method section" id="metod">
+ <div class="wrap method-grid">
+  <div class="method-copy"><div class="section-kicker">02 / VÅR TRÄNINGSMETOD</div><h2>DETALJERNA<br>GÖR <em>SKILLNAD.</em></h2>
+  <p class="large">Vi tränar på det som händer i matchsituationer – och på detaljerna som hjälper spelaren att lyckas oftare.</p>
+  <ul class="check-list"><li>Första touch och bollkontroll</li><li>Passningsteknik och precision</li><li>Driva boll, finter och riktningsförändringar</li><li>Avslut och skotteknik</li><li>Spelförståelse och beslutsfattande</li></ul>
+  <a class="btn btn-outline" href="#anmalan">Hitta rätt träning för dig <b>↗</b></a></div>
+  <div class="method-visual"><img class="method-main" src="37608.webp" alt="Spelare tränar teknik i liten grupp"><img class="method-small" src="37631.webp" alt="Teknikövning med koner"><div class="image-caption">TRÄNA MED SYFTE. UTVECKLAS MED KVALITET.</div></div>
+ </div>
+</section>
+
+<section class="gallery section wrap">
+ <div class="gallery-heading"><div><div class="section-kicker">03 / PÅ PLANEN</div><h2>TRÄNING I <em>VERKLIGHETEN.</em></h2></div><p>Fokus, energi och många bollkontakter. Så vill vi att våra pass ska kännas.</p></div>
+ <div class="photo-grid">
+  <img src="37614.webp" alt="Gruppsamling på fotbollsplanen">
+  <img src="37638.webp" alt="Fotbollsträning på planen">
+  <img src="37633.webp" alt="Teknikövning med boll">
+  <img src="37659.webp" alt="Individuell teknikträning">
+  <img src="37649.webp" alt="Fotbollsträning sedd ovanifrån">
+ </div>
+</section>
+
+<section class="coaches section" id="tranare">
+ <div class="wrap coaches-grid">
+  <div class="coach-photo"><img src="37573.webp" alt="Senad och Blertim från SB Coaching"></div>
+  <div class="coach-copy"><div class="section-kicker">04 / MÖT TRÄNARNA</div><h2>TVÅ BRÖDER.<br><em>SAMMA PASSION.</em></h2>
+  <p class="large">Vi är Senad och Blertim Zuta – bröder, fotbollstränare och grundare av SB Coaching.</p>
+  <p>Med UEFA B-utbildning och erfarenhet av spelar- och lagutveckling vill vi skapa träningsmiljöer där unga spelare får rätt förutsättningar att utvecklas. Vi är alltid två tränare på planen och arbetar nära spelarna genom hela passet.</p>
+  <div class="coach-credentials"><span>UEFA B-LICENSIERADE</span><span>INDIVIDUELL FEEDBACK</span><span>SMÅ TRÄNINGSGRUPPER</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="packages section wrap" id="paket">
+ <div class="section-kicker">05 / TRÄNINGSPAKET</div><div class="packages-head"><h2>EN PLAN FÖR <em>NÄSTA STEG.</em></h2><p>Vi erbjuder enstaka pass och träningspaket. Tillsammans hittar vi ett upplägg som passar spelarens mål, nivå och vardag.</p></div>
+ <div class="package-cards">
+  <article><span class="package-label">FLEXIBELT</span><h3>Enstaka pass</h3><p>För dig som vill testa SB Coaching eller fokusera på ett särskilt utvecklingsområde.</p><a href="#anmalan">Fråga om plats <b>↗</b></a></article>
+  <article class="package-featured"><span class="package-label">KONTINUITET</span><h3>Träningspaket</h3><p>Flera pass med möjlighet att arbeta långsiktigt och följa spelarens utveckling.</p><a href="#anmalan">Se aktuella paket <b>↗</b></a></article>
+  <article><span class="package-label">LAG / FÖRENING</span><h3>Träning på förfrågan</h3><p>Vi kan även hjälpa lag med temapass och kompletterande individuell träning.</p><a href="mailto:sb.coacha@gmail.com">Kontakta oss <b>↗</b></a></article>
+ </div>
+ <p class="price-note">Kontakta oss för aktuella priser, tillgänglighet och paket.</p>
+</section>
+
+<section class="signup section" id="anmalan">
+ <div class="wrap signup-grid"><div><div class="section-kicker">06 / INTRESSEANMÄLAN</div><h2>REDO ATT<br><em>TA NÄSTA STEG?</em></h2><p class="large">Fyll i intresseanmälan så återkommer vi med information om träning, tider och platser.</p><p class="signup-contact">Har du frågor? <a href="mailto:sb.coacha@gmail.com">sb.coacha@gmail.com</a></p></div>
+ <div class="form-frame"><div class="form-top"><span>INTRESSEANMÄLAN</span><span>SB / 01</span></div>
+ <iframe title="Intresseanmälan SB Coaching" src="https://docs.google.com/forms/d/e/1FAIpQLSdY_qeUboUHV2ClctIs5MkWqklAwsOvhIHdhWsCGKPGg7NZLw/viewform?embedded=true" loading="lazy">Läser in formuläret…</iframe>
+ <a class="form-fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdY_qeUboUHV2ClctIs5MkWqklAwsOvhIHdhWsCGKPGg7NZLw/viewform" target="_blank" rel="noopener">Öppna formuläret i nytt fönster ↗</a>
+ </div></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-main"><a class="brand" href="#hem"><img src="37569.webp" alt=""><span>SB <b>COACHING</b></span></a><div><strong>SB COACHING</strong><p>Individuell fotbollsträning<br>Förbovallen, Mölndal</p></div><div><strong>KONTAKT</strong><p><a href="mailto:sb.coacha@gmail.com">sb.coacha@gmail.com</a><br><a href="https://www.instagram.com/sb___coaching/" target="_blank" rel="noopener">@sb___coaching ↗</a></p></div></div><div class="wrap footer-bottom"><span>© 2026 SB Coaching</span><span>UTVECKLING SITTER I DETALJERNA.</span></div></footer>
+<script>
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
+</script>
+</body></html>
