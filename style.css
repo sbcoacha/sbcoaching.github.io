@@ -12,3 +12,5 @@
 @media(max-width:520px){.training-gallery{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
 
 .method-grid-single{grid-template-columns:minmax(0,760px)}
+
+.home-footer .footer-main{grid-template-columns:auto minmax(0,1fr);align-items:center}.home-footer .footer-main p{max-width:640px;margin:0;font-size:14px}@media(max-width:680px){.home-footer .footer-main{grid-template-columns:1fr}.home-footer .footer-main .brand{grid-column:auto}}
