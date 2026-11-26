@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Allow ChatGPT Search discovery
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://www.sb-coaching.se/sitemap.xml
